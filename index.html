@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETRO NINJA</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+      
+        .game-logo {
+            width: 300px; 
+            height: auto; 
+        }
+    </style>
+
+</head>
+<body>
+    <!-- En-tête du Jeu -->
+
+
+    <!-- Toile Principale -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Corps Principal -->
+    
+    <div class="startGame" id="startGame">
+        <div class="home">
+            <img src="./ressourcesimages/logo.png" alt="Logo du jeu" class="game-logo">
+            <button id="startGameBtn">JOUER</button>
+            <p>MEILLEUR SCORE : <span id="homeHighScore"></span></p>
+            
+        </div>
+        <p class="copyRight">WITH LOVE</p>
+        
+      
+       
+    </div>
+
+   
+    <div class="countDown" id="countDownContainer">
+        <h1></h1>
+    </div>
+
+    <!-- Corps du Jeu -->
+    <div id="inGameContainer">
+        <div class="scoreDiv">
+            <p>Score : <span id="score"></span></p>
+            <p>Meilleur Score : <span id="highScore"></span></p>
+        </div>
+        <div class="gameCountTime">
+            <h1 id="gameMinuteAndSecond">00 : 00</h1>
+        </div>
+        <div id="strikeCountDiv">
+            <h1 class="strikeCount">1x</h1>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="gameEndDiv">
+        <div class="gameEndContainer">
+            <p>Votre Score : <span id="endGameScore"></span></p>
+            <button id="returnHome">Retour à l'Accueil <i class="fa-solid fa-right-to-bracket"></i></button>
+        </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
